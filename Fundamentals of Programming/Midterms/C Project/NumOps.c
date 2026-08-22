@@ -15,6 +15,11 @@ int main () {
 	
 	printf("Set value for y: ");
 	scanf("%f", &y);
+
+	if (x == 0 && y == 0) {
+		printf("Error: Zero is filtered out and not allowed!\n");
+		return 1;
+	}
 	
 	if(strcmp(op, "+") == 0) {
 		printf("%.7f", x + y);
